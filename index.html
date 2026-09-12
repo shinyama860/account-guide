@@ -10,26 +10,48 @@
     html, body {
       margin: 0;
       padding: 0;
+      background: #111;
       width: 100%;
-      height: 100%;
-      overflow: hidden;
+      min-height: 100%;
+    }
+
+    .pdf-link {
+      display: block;
+      width: 100%;
+      min-height: 100vh;
+      text-decoration: none;
       background: #111;
     }
 
-    iframe {
-      display: block;
-      width: 100%;
-      height: 100vh;
-      height: 100dvh;
-      border: 0;
+    .open-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 24px;
+      background: #f97316;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
-  <iframe
-    src="account-guide.pdf#view=FitH"
-    title="口座開設完全ガイド">
-  </iframe>
+
+  <div class="open-area">
+    <a class="button" href="account-guide.pdf">
+      口座開設完全ガイドを開く
+    </a>
+  </div>
+
 </body>
 </html>
